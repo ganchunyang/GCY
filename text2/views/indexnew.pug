@@ -1,0 +1,172 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(name='keywords', content='')
+        meta(name='description', content='')
+        link(rel='stylesheet', href='../stylesheets/amazeui.min.css')
+        link(rel='stylesheet', href='../stylesheets/indexnew.css')
+        title 首页
+    body
+        .am-gotop.am-gotop-fixed(data-am-widget='gotop')
+            a(href='#top', title='')
+                img.am-gotop-icon-custom(src='../images/goTop.png')
+        #top.pet_mian
+            .am-slider.am-slider-a1(data-am-widget='slider', data-am-slider='{"directionNav":false}')
+                ul.am-slides
+                    li(style='width: 640px;float: left;display: block;')
+                        img(src='../images/english.jpg')
+                        .pet_slider_font
+                            span.pet_slider_emoji  (╭￣3￣)╭♡
+                            span 英国议会下院投票否决“脱欧”协议
+                        .pet_slider_shadow
+                    li(style='width: 640px;float: left;display: block;')
+                        img(src='../images/fire.jpg')
+                        .pet_slider_font
+                            span.pet_slider_emoji  []~(￣▽￣)~*　
+                            span “火龙钢花”迎佳节
+                        .pet_slider_shadow
+                    li(style='width: 640px;float: left;display: block;')
+                        img(src='../images/newyear1.jpg')
+                        .pet_slider_font
+                            span.pet_slider_emoji  (｡・`ω´･)　
+                            span 春节临近，各地商贸、年货集市日渐火爆，年味越来越浓。
+                        .pet_slider_shadow
+            .pet_circle_nav
+                ul.pet_circle_nav_list
+                    li
+                        a.iconfont.pet_nav_xinxianshi(href='/fleshcontent') 
+                        span 新鲜事
+                    li
+                        a.iconfont.pet_nav_zhangzhishi(href='/interest') 
+                        span 趣闻
+
+                    li
+                        a.iconfont.pet_nav_dianpu(href='/video') 
+                        span 视频
+                    li
+                        a.iconfont.pet_nav_gengduo(href='javascript:;') 
+                        span 更多
+                .pet_more_list
+                    .pet_more_list_block
+                        .iconfont.pet_more_close ×
+                        .pet_more_list_block
+                            .pet_more_list_block_name
+                                .pet_more_list_block_name_title 阅读 Read
+                                a.pet_more_list_block_line(href='/fleshcontent')
+                                    i.iconfont.pet_nav_xinxianshi.pet_more_list_block_line_ico 
+                                    .pet_more_list_block_line_font 新鲜事
+                                a.pet_more_list_block_line(href='/interest')
+                                    i.iconfont.pet_nav_zhangzhishi.pet_more_list_block_line_ico 
+                                    .pet_more_list_block_line_font 趣闻
+                                a.pet_more_list_block_line(href='/video')
+                                    i.iconfont.pet_nav_bk.pet_more_list_block_line_ico 
+                                    .pet_more_list_block_line_font 视频
+                                a.pet_more_list_block_line
+                                    i.iconfont.pet_nav_wd.pet_more_list_block_line_ico 
+                                    .pet_more_list_block_line_font 首页
+
+            .pet_content_main
+                .am-list-news.am-list-news-default(data-am-widget='list_news')
+                    .am-list-news-bd
+                        ul.am-list
+                            // 缩略图在标题右边
+                            li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-right.pet_list_one_block
+                                .pet_list_one_info
+                                    .pet_list_one_info_l
+                                        .pet_list_one_info_ico
+                                            img(src='../images/a1.png', alt='')
+                                        .pet_list_one_info_name Super invincible 菁
+                                    .pet_list_one_info_r
+                                        .pet_list_tag.pet_list_tag_xxs 新鲜事
+                                .am-u-sm-8.am-list-main.pet_list_one_nr
+                                    h3.am-list-item-hd.pet_list_one_bt
+                                        a(href='/fleshcontent1') 长假期间，人们依然提不起精神！
+                                    .am-list-item-text.pet_list_one_text 每逢长假，总有那么一群人选择远离人山人海，静静地呆在家，坐在电脑电视前。长时间的工作学习让他们感觉很疲惫，对什么都提不起劲，打开电脑却不知道干什么好…
+                                .am-u-sm-4.am-list-thumb
+                                    a(href='/fleshcontent1')
+                                        img.pet_list_one_img(src='../images/w1.jpeg', alt='')
+                            li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-right.pet_list_one_block
+                                .pet_list_one_info
+                                    .pet_list_one_info_l
+                                        .pet_list_one_info_ico
+                                            img(src='../images/a6.png', alt='')
+                                        .pet_list_one_info_name La Da Dee
+                                    .pet_list_one_info_r
+                                        .pet_list_tag.pet_video_tag 视频
+                                .am-u-sm-8.am-list-main.pet_list_one_nr
+                                    h3.am-list-item-hd.pet_list_one_bt
+                                        a(href='/videocontent') 8月22日破解“谜题实验室”
+                                    .am-list-item-text.pet_list_one_text
+                                        | “砰砰计划”免费单人冒险——谜题实验室将在8月22日开放！运用你的过人智慧破解科学难题，分析斩杀、清场、镜像和生存四种令人困惑的谜题吧！
+                                .am-u-sm-4.am-list-thumb.pet_video_info
+                                    .pet_video_info_tag
+                                        i.iconfont 
+                                        | 00:59
+                                    a(href='/videocontent')
+                                        img.pet_list_one_img(src='../images/lushi2.png', alt='')
+                            li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-right.pet_list_one_block
+                                .pet_list_one_info
+                                    .pet_list_one_info_l
+                                        .pet_list_one_info_ico
+                                            img(src='../images/a2.png', alt='')
+                                        .pet_list_one_info_name AbsScript
+                                    .pet_list_one_info_r
+                                        .pet_list_tag.pet_list_tag_zzs 趣闻
+                                .am-u-sm-8.am-list-main.pet_list_one_nr
+                                    h3.am-list-item-hd.pet_list_one_bt
+                                        a(href='###') 内马尔回巴西PK女花式足球员，3：1不敌女方！
+                                    .am-list-item-text.pet_list_one_text 巴西球星内马尔的脚下功夫相信大家都不会怀疑，因为他经常在比赛中都用花巧的招数过人，森巴味十足。不过，原来技术这么好的球星，都可能不敌女花式足球员，真的是巾帼不让须眉。
+                                .am-u-sm-4.am-list-thumb
+                                    a(href='###')
+                                        img.pet_list_one_img(src='../images/football.jpg', alt='我很囧，你保重....晒晒旅行中的那些囧！')
+                            li.am-g.am-list-item-desced.pet_list_one_block
+                                .pet_list_one_info
+                                    .pet_list_one_info_l
+                                        .pet_list_one_info_ico
+                                            img(src='../images/a3.png', alt='')
+                                        .pet_list_one_info_name 养了猫
+                                    .pet_list_one_info_r
+                                        .pet_list_tag.pet_list_tag_stj 新鲜事
+                                .am-list-main
+                                    h3.am-list-item-hd.pet_list_one_bt
+                                        a(href='###') 支付宝正式官宣！集五福终于来了，有什么新套路？
+                                    ul.am-gallery.am-avg-sm-3.am-avg-md-3.am-avg-lg-3.am-gallery-default.pet_list_one_list(data-am-widget='gallery')
+                                        li
+                                            .am-gallery-item
+                                                a(href='###')
+                                                    img(src='../images/zhifubao1.jpg', alt='某天 也许会相遇 相遇在这个好地方')
+                                        li
+                                            .am-gallery-item
+                                                a(href='###')
+                                                    img(src='../images/zhifubao2.jpg', alt='不要太担心 只因为我相信')
+                                        li
+                                            .am-gallery-item
+                                                a(href='###')
+                                                    img(src='../images/zhifubao3.jpg', alt='终会走过这条遥远的道路')
+                                    .am-list-item-text.pet_list_two_text
+                                        | 今年支付宝和微信福利一直没停歇，各种小活动层出不穷，尤其是支付宝扫码领红包活动，火了一整年，每天都有人乐此不疲地薅羊毛，而支付宝也没有停下继续制造惊喜的脚步，近日上线了余额宝体验金的活动也收获了不少好评，不过，年底了，大家最期待的还是集五福，这才是年度重磅的支付宝活动。
+        script(src='../javascripts/jquery.min.js')
+        script(src='../javascripts/amazeui.min.js')
+        script.
+            $(function(){
+                // 动态计算新闻列表文字样式
+                auto_resize();
+                $(window).resize(function() {
+                    auto_resize();
+                });
+                $('.am-list-thumb img').load(function(){
+                    auto_resize();
+                });
+                $('.am-list > li:last-child').css('border','none');
+                function auto_resize(){
+                    $('.pet_list_one_nr').height($('.pet_list_one_img').height());
+                }
+                $('.pet_nav_gengduo').on('click',function(){
+                    $('.pet_more_list').addClass('pet_more_list_show');
+                });
+                $('.pet_more_close').on('click',function(){
+                    $('.pet_more_list').removeClass('pet_more_list_show');
+                });
+            });

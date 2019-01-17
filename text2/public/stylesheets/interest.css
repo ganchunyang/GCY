@@ -1,0 +1,369 @@
+html, body {
+    background: #ececec;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pet_mian {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #ececec;
+    position: relative;
+}
+
+.pet_content_main {
+    max-width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0 0 3px rgba(100, 100, 100, .1);
+    box-shadow: 0 0 3px rgba(100, 100, 100, .1);
+}
+
+.pet_nav_xinxianshi {
+    background: #fe9700;
+}
+
+.pet_nav_zhangzhishi {
+    background: #f26765;
+}
+
+.pet_nav_kantuya {
+    background: #6f68df;
+}
+
+.pet_nav_mengzhuanti {
+    background: #7f2d00;
+}
+
+.pet_nav_meirong {
+    background: #fd7a49;
+}
+
+.pet_nav_gengduo {
+    background: #7fd02b;
+}
+
+.pet_nav_yiyuan {
+    background: #19cf8a;
+}
+
+.pet_nav_dianpu {
+    background: #4493f7;
+}
+
+.am-list-news-default {
+    margin-top: 0;
+}
+
+.pet_content_main .am-list > li {
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.am-list-news-default .am-list .am-list-item-desced .am-list-item-text {
+    margin: 0;
+}
+
+.pet_content_main .am-list, .am-topbar {
+    margin-bottom: 0;
+}
+
+.pet_content_main .am-list-news-default {
+    margin: 0;
+}
+
+.pet_content_main .am-list-item-hd a {
+    color: #222;
+    font-weight: bold;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_bt {
+    margin-top: -4px;
+    line-height: 22px;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_nr {
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_info {
+    width: 100%;
+    clear: both;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_info_l {
+    float: left;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_info_ico {
+    width: 26px;
+    height: 26px;
+    float: left;
+}
+
+.am-list-news-default .am-list .pet_list_one_block {
+    padding-bottom: 20px;
+    margin-bottom: 7px;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_info_ico img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_info_name {
+    color: #757575;
+    float: left;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: .5em;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_info_r {
+    float: right;
+}
+
+.pet_content_main .am-list-news-default .pet_list_one_text {
+    position: absolute;
+    left: 0px;
+    bottom: 0px; /*-webkit-line-clamp: 1;*/
+}
+
+.pet_content_main .am-list-news-default .pet_list_zt_img {
+    width: 100%;
+    padding: 8px 0;
+}
+
+.pet_content_main .am-list-news-default .pet_list_zt_img img {
+    width: 100%;
+}
+
+.pet_list_one_tytj {
+    padding: 0px
+}
+
+.pet_more_list {
+    width: 100%;
+    left: 0;
+    height: 80%;
+    background: rgba(48, 52, 53, .9);
+    position: fixed;
+    bottom: -9900px;
+    z-index: 9999;
+    -webkit-transition: all .5s;
+    transition: all 0.5s;
+}
+
+.pet_more_list_block {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.pet_more_close {
+    text-align: right;
+    height: 35px;
+    width: 100%;
+    line-height: 45px;
+    padding-right: 15px;
+    font-size: 30px;
+    color: #cbc8d9;
+}
+
+.pet_more_list_show {
+    bottom: 0;
+    left: 0;
+    animation: more_list 0.5s;
+    -webkit-animation: more_list 0.5s;
+}
+
+.pet_more_list_block {
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pet_more_list_block_name_title {
+    color: #918f90;
+    font-size: 15px;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.pet_more_list_block_name_ico {
+    font-size: 18px;
+}
+
+.pet_more_list_block_line {
+    cursor: pointer;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    width: 90px;
+    margin: 5px;
+    margin-left: 0px;
+    display: inline-block;
+    background: #303435;
+    border-radius: 5px;
+}
+
+.pet_more_list_block_line:hover {
+    color: #fff;
+}
+
+.pet_more_list_block_line_height {
+    padding-top: 10px;
+}
+
+.pet_more_list_block_line_ico {
+    margin: 5px 0 0 5px;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pet_more_list_block_line_font {
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 22px;
+    padding-left: 8px;
+    padding-top: 4px;
+    font-size: 14px;
+}
+
+.pet_list_tytj_ico {
+    margin: 0;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.pet_head {
+    position: fixed;
+    height: 49px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.pet_head_block {
+    background: #303435;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 53px;
+}
+
+.pet_head_jt_ico {
+    font-size: 25px;
+    border-right: 1px solid #4c4a4b;
+}
+
+.pet_head_gd_ico {
+    font-size: 27px;
+}
+
+.pet_head_block .am-header-nav > a {
+    color: #918f90;
+    height: 30px;
+    line-height: 30px;
+    min-width: 48px;
+}
+
+.pet_content_list {
+    padding-top: 29px;
+}
+
+.pet_article_footer_info {
+    text-align: center;
+    font-size: 12px;
+    color: #b9b8b8;
+    height: 30px;
+    line-height: 30px;
+    margin: 17px;
+}
+
+.pet_article_like {
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    padding: 18px;
+}
+
+.pet_article_like_delete {
+    padding: 0;
+    box-shadow: none;
+}
+
+.pet_article_like_title {
+    font-weight: bold;
+    color: #222;
+    font-size: 16px;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.pet_news_list_tag_name {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 49px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 340px) {
+    .pet_content_main .am-list-news-default .pet_list_one_text {
+        -webkit-line-clamp: 1;
+    }
+
+    .pet_wiki_head_info_title {
+        font-size: 23px;
+        line-height: 25px;
+        padding-top: 10px;
+    }
+
+    .pet_wiki_head_info_title span {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .pet_wiki_text_line_r {
+        display: none;
+    }
+}

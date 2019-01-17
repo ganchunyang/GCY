@@ -1,0 +1,58 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(name='keywords', content='')
+        meta(name='description', content='')
+        title 视频
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        link(rel='stylesheet', href='/stylesheets/video.css')
+        script(type='text/javascript', src='/javascripts/vue.js')
+        script(type='text/javascript', src='/javascripts/vue-resource.min.js')
+        script(type='text/javascript', src='/javascripts/pulltorefresh.js')
+        style.
+            #ptr-instructions{
+                width: 100%;
+                height: 90px;
+                font-size: 20px;
+                color: black;
+                text-align: center;
+                overflow: hidden;
+            }
+    body(style='background:#ececec;')
+        #showVue
+            .am-gotop.am-gotop-fixed(data-am-widget='gotop')
+                a(href='#top', title='')
+                    img.am-gotop-icon-custom(src='../images/goTop.png')
+            .pet_mian
+                .pet_head
+                    header.am-header.am-header-default.pet_head_block(data-am-widget='header')
+                        .am-header-left.am-header-nav
+                            a.iconfont.pet_head_jt_ico(href='/indexnew') 
+                        .pet_news_list_tag_name 视频列表
+                        .am-header-right.am-header-nav
+                            a.iconfont.pet_head_gd_ico(href='javascript:;') 
+                .pet_content.pet_content_list.pet_topci
+                    .pet_article_like
+                        #ptr-instructions
+                            // your loading icon here
+                            span.ptr-instructions-text
+                        .pet_content_main.pet_article_like_delete
+                            .am-list-news.am-list-news-default.am-no-layout(data-am-widget='list_news')
+                                #main.am-list-news-bd
+                                    ul.am-list
+                                        template(lang='pug')
+                                            li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-right.pet_topci_list(v-for='video in arr')
+                                                a.pet_topci_block(href='###')
+                                                    .pet_topci_video
+                                                        i.iconfont 
+                                                        span {{video.time}}
+                                                    .pet_topci_shadow_font {{video.title}}
+                                                    .pet_topci_shadow
+                                                    img(v-bind:src='video.path', alt='')
+                            //button#refresh(@click='refresh') 刷新
+                .pet_article_footer_info Copyright(c)2015 PetShow All Rights Reserved
+        script(type='text/javascript', src='/javascripts/video.js')
+        script(src='../javascripts/jquery.min.js')
+        script(src='../javascripts/amazeui.min.js')
